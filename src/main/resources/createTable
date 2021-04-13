@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS PUBLIC.CONTACT;
+CREATE TABLE IF NOT EXISTS CONTACT (
+                      'id' INTEGER PRIMARY KEY AUTO_INCREMENT,
+                      'name' VARCHAR(50) NOT NULL,
+                      'url' VARCHAR(200) NOT NULL
+);

@@ -33,9 +33,6 @@ public class ContactListControllerTest {
     @Mock
     private Environment environment;
 
-    @Mock
-    private ImportExcelComponent importExcelComponent;
-
     private List<Contact> contactList;
 
     @Before
@@ -45,7 +42,6 @@ public class ContactListControllerTest {
         contactList.add(CONTACT2);
 
         when(contactListService.findAllContacts()).thenReturn(contactList);
-        when(importExcelComponent.getContactListList()).thenReturn(contactList);
     }
 
     @Test

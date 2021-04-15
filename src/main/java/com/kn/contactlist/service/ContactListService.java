@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class ContactListService {
+public class ContactListService implements IContactListService{
 
     private static final String FILE_NAME = "people.csv";
 
